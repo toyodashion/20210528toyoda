@@ -38,6 +38,12 @@ header img:hover {
   align-items: center;
 }
 
+@media screen and (min-width:769px){
+  .menu{
+    display: none;
+  }
+}
+
 .border__1,
 .border__2,
 .border__3 {
@@ -65,7 +71,7 @@ header img:hover {
 
 .nav {
   height: 100%;
-  width: 100vh;
+  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -75,7 +81,23 @@ header img:hover {
   right: 0;
   top: 0;
   transform: translateX(-100%);
-  transition: 00.5s;
+  transition: 0.5s;
+}
+
+@media screen and (min-width:769px){
+  .nav{
+    background-color: none;
+    transform: none;
+    height: 65px;
+    width: 87%;
+    flex-direction: row;
+    justify-content: flex-end;
+    transition: none;
+  }
+  .nav li {
+    padding: 0 20px 55px;
+    color: black;
+  }
 }
 
 .nav li {
@@ -117,7 +139,6 @@ header img:hover {
 
 .nav.show {
   transform: translateX(0%);
-  transition: 0.5s;
 }
 
 .firstview {
@@ -183,6 +204,10 @@ header img:hover {
   width: 100%;
 }
 
+.service__content{
+  width: 85%;
+}
+
 .service h2 {
   font-size: 30px;
   line-height: 48px;
@@ -195,7 +220,6 @@ header img:hover {
 .service__2,
 .service__3,
 .service__4 {
-  width: 85%;
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -310,18 +334,27 @@ dl dt {
   align-items: center;
 }
 
+.blog__content{
+  width: 85%;
+}
+
+@media screen and (min-width:769px) {
+  .blog__content{
+    display: flex;
+  }
+  .blog__1,
+  .blog__2,
+  .blog__3{
+    padding: 0 5px;
+  }
+}
+
 .blog h2 {
   font-size: 30px;
   line-height: 48px;
   font-weight: 700;
   font-family: "Noto Sans JP", sans-serif;
   padding: 70px 0 20px;
-}
-
-.blog__1,
-.blog__2,
-.blog__3 {
-  width: 85%;
 }
 
 .blog__1 h3,
@@ -340,6 +373,19 @@ dl dt {
   line-height: 22px;
   font-size: 14px;
   font-weight: 400;
+}
+
+.blog__1 a,
+.blog__2 a,
+.blog__3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.blog__1:hover,
+.blog__2:hover,
+.blog__3:hover {
+  opacity: 0.7;
 }
 
 .company {
@@ -438,3 +484,4 @@ img {
 .btn:hover {
   opacity: 0.7;
 }
+
