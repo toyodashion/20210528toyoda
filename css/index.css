@@ -41,8 +41,8 @@ header img:hover {
   align-items: center;
 }
 
-@media screen and (min-width:769px){
-  .menu{
+@media screen and (min-width: 769px) {
+  .menu {
     display: none;
   }
 }
@@ -87,8 +87,8 @@ header img:hover {
   transition: 0.5s;
 }
 
-@media screen and (min-width:769px){
-  .nav{
+@media screen and (min-width: 769px) {
+  .nav {
     background-color: none;
     transform: none;
     height: 65px;
@@ -118,7 +118,7 @@ header img:hover {
   color: blue;
 }
 
-@media screen and(min-width:769px) {
+@media screen and (min-width: 769px) {
   .nav a:link,
   .nav a:visited,
   .nav a:active {
@@ -214,15 +214,22 @@ header img:hover {
   width: 100%;
 }
 
-.service__content{
+.service__content {
   width: 85%;
 }
 
-@media screen and(min-width:769px) {
-  .service__content{display: flex;
-                    flex-wrap: wrap;
+@media screen and (min-width: 769px) {
+  .service__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  .ser
+  .service__1,
+  .service__2,
+  .service__3,
+  .service__4 {
+    width: 49%;
+  }
 }
 
 .service h2 {
@@ -351,17 +358,17 @@ dl dt {
   align-items: center;
 }
 
-.blog__content{
+.blog__content {
   width: 85%;
 }
 
-@media screen and (min-width:769px) {
-  .blog__content{
+@media screen and (min-width: 769px) {
+  .blog__content {
     display: flex;
   }
   .blog__1,
   .blog__2,
-  .blog__3{
+  .blog__3 {
     padding: 0 5px;
   }
 }
@@ -473,18 +480,18 @@ footer {
   align-items: center;
 }
 
-@media screen and (min-width:769px) {
-  footer{
-    height:8vh;
+@media screen and (min-width: 769px) {
+  footer {
+    height: 8vh;
   }
-  footer ul{
+  footer ul {
     display: flex;
   }
-  footer a{
+  footer a {
     padding: 0 5px;
     font-family: "Noto Sans JP", sans-serif;
   }
-  footer a::after{
+  footer a::after {
     content: "|";
     color: white;
     padding-left: 5px;
@@ -519,4 +526,3 @@ img {
 .btn:hover {
   opacity: 0.7;
 }
-
