@@ -218,6 +218,13 @@ header img:hover {
   width: 85%;
 }
 
+@media screen and(min-width:769px) {
+  .service__content{display: flex;
+                    flex-wrap: wrap;
+  }
+  .ser
+}
+
 .service h2 {
   font-size: 30px;
   line-height: 48px;
