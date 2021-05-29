@@ -84,7 +84,6 @@ header img:hover {
   right: 0;
   top: 0;
   transform: translateX(-100%);
-  transition: 0.5s;
 }
 
 @media screen and (min-width: 769px) {
@@ -99,7 +98,6 @@ header img:hover {
   }
   .nav li {
     padding: 0 20px 55px;
-    color: black;
   }
 }
 
