@@ -41,12 +41,6 @@ header img:hover {
   align-items: center;
 }
 
-@media screen and (min-width: 769px) {
-  .menu {
-    display: none;
-  }
-}
-
 .border__1,
 .border__2,
 .border__3 {
@@ -84,20 +78,43 @@ header img:hover {
   right: 0;
   top: 0;
   transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.nav__2{
+  display: none;
 }
 
 @media screen and (min-width: 769px) {
-  .nav {
-    background-color: none;
-    transform: none;
-    height: 65px;
-    width: 87%;
-    flex-direction: row;
-    justify-content: flex-end;
-    transition: none;
+  .nav{
+    display: none;
   }
-  .nav li {
+  .menu{
+    display: none;
+  }
+  .nav__2 {
+  background-color: none;
+  transform: none;
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  transition: none;
+  align-items: center;
+  }
+  .nav__2 li {
     padding: 0 20px 55px;
+  }
+  .nav__2 a{
+    text-decoration: none;
+    color: black;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .nav__2 li:hover{
+    opacity: 0.7;
   }
 }
 
@@ -117,9 +134,9 @@ header img:hover {
 }
 
 @media screen and (min-width: 769px) {
-  .nav a:link,
-  .nav a:visited,
-  .nav a:active {
+  .nav__2 a:link,
+  .nav__2 a:visited,
+  .nav__2 a:active {
     color: black;
   }
 }
@@ -143,10 +160,6 @@ header img:hover {
   transform: rotate(-45deg);
   transition: 0.5s;
   bottom: 23px;
-}
-
-.nav {
-  transition: 0.7s;
 }
 
 .nav.show {
