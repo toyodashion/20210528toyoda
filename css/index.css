@@ -145,6 +145,10 @@ header img:hover {
   bottom: 23px;
 }
 
+.nav {
+  transition: 0.7s;
+}
+
 .nav.show {
   transform: translateX(0%);
 }
